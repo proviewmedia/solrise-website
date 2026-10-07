@@ -46,7 +46,7 @@ img { max-width: 100%; height: auto; display: block; }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; }
 .brand:hover { text-decoration: none; }
-.brand img { width: 34px; height: 34px; }
+.brand img { width: 46px; height: 25px; }
 .nav-links { display: flex; gap: 22px; font-weight: 600; font-size: 15px; }
 .nav-links a { color: var(--muted); }
 .nav-links a:hover { color: var(--text); text-decoration: none; }
