@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How to Read a METAR Weather Report | Solrise Weather</title>
+<meta name="description" content="A METAR is an airport&#x27;s routine weather observation in shorthand. Learn to decode the station, time, wind, visibility, clouds, temperature, and pressure.">
+<link rel="canonical" href="https://proviewmedia.github.io/solrise-website/learn/how-to-read-a-metar.html">
+<meta name="theme-color" content="#0b1a4a">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/favicon-180.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Solrise Weather">
+<meta property="og:title" content="How to Read a METAR Weather Report | Solrise Weather">
+<meta property="og:description" content="A METAR is an airport&#x27;s routine weather observation in shorthand. Learn to decode the station, time, wind, visibility, clouds, temperature, and pressure.">
+<meta property="og:url" content="https://proviewmedia.github.io/solrise-website/learn/how-to-read-a-metar.html">
+<meta property="og:image" content="https://proviewmedia.github.io/solrise-website/assets/screen-today.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to read a METAR",
+  "description": "A METAR is an airport's routine weather observation in shorthand. Learn to decode the station, time, wind, visibility, clouds, temperature, and pressure.",
+  "image": "https://proviewmedia.github.io/solrise-website/assets/screen-today.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "CU Adventures LLC"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CU Adventures LLC"
+  },
+  "datePublished": "2026-10-07",
+  "dateModified": "2026-10-07",
+  "mainEntityOfPage": "https://proviewmedia.github.io/solrise-website/learn/how-to-read-a-metar.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does Z mean in a METAR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Z stands for Zulu, which means UTC. In 091853Z, the report is from the 9th of the month at 18:53 UTC."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is a METAR issued?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Roughly once an hour. When weather changes significantly between routine reports, the station sends an unscheduled special report called a SPECI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does M mean in front of a METAR temperature?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "M means minus. M05/M10 is a temperature of -5°C with a dew point of -10°C."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://proviewmedia.github.io/solrise-website/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Learn",
+      "item": "https://proviewmedia.github.io/solrise-website/learn/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to read a METAR",
+      "item": "https://proviewmedia.github.io/solrise-website/learn/how-to-read-a-metar.html"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../"><img src="../assets/sunrise.png" alt="" width="34" height="34">Solrise</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="../#features">Features</a>
+      <a href="./">Learn</a>
+      <a href="../#pricing">Pricing</a>
+      <a href="../support.html">Support</a>
+      <a href="../press.html">Press</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc article">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="../">Home</a></li>
+      <li><a href="./">Learn</a></li>
+      <li aria-current="page">How to read a METAR</li>
+    </ol>
+  </nav>
+  <h1>How to read a METAR</h1>
+  <p class="lede-sm"><strong>A METAR (Meteorological Aerodrome Report) is a routine weather observation from an airport station, written in compact code.</strong> You read it left to right: station, day and time in UTC, wind, visibility, sky condition, temperature and dew point, then the altimeter setting.</p>
+
+<h2>What a METAR is</h2>
+<p>A METAR is a surface observation from an airport weather station: what that station actually measured, not a forecast. It is refreshed roughly once an hour, and more often if conditions change quickly. It is the same real-world data behind everyday weather numbers, just in the compact code aviation has used for decades.</p>
+<p>Here is a sample report, decoded below:</p>
+<pre class="code">KVGT 091853Z 12005KT 10SM FEW150 36/06 A3010</pre>
+
+<h2>Decoding a METAR, piece by piece</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Code</th><th>What it means</th></tr></thead>
+<tbody>
+<tr><td><code>KVGT</code></td><td>Station identifier: the airport's ICAO code.</td></tr>
+<tr><td><code>091853Z</code></td><td>Day of month and time, in UTC ("Zulu"): the 9th at 18:53 UTC.</td></tr>
+<tr><td><code>12005KT</code></td><td>Wind: direction in degrees, then speed in knots. Here, from 120 degrees at 5 knots. "VRB" means variable direction.</td></tr>
+<tr><td><code>10SM</code></td><td>Visibility in statute miles. 10SM is usually the most the station reports.</td></tr>
+<tr><td><code>CLR, FEW, SCT, BKN, OVC</code></td><td>Sky condition: clear, then increasing cloud cover (few, scattered, broken, overcast), with the cloud base in hundreds of feet. FEW150 is a few clouds at 15,000 ft.</td></tr>
+<tr><td><code>36/06</code></td><td>Temperature / dew point, in Celsius. An "M" in front means minus.</td></tr>
+<tr><td><code>A3010</code></td><td>Altimeter setting: local barometric pressure in inches of mercury (30.10 inHg here).</td></tr>
+<tr><td><code>RMK ...</code></td><td>Remarks: extra automated-station detail like pressure trends and precise temperatures. Usually skippable.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="source">Source: FAA and National Weather Service METAR format.</p>
+
+<h3>Sky cover in eighths</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Code</th><th>Sky covered</th><th>What it looks like</th></tr></thead>
+<tbody>
+<tr><td>CLR / SKC</td><td>0 eighths</td><td>Clear sky.</td></tr>
+<tr><td>FEW</td><td>1 to 2 eighths</td><td>A few clouds, up to a quarter of the sky.</td></tr>
+<tr><td>SCT</td><td>3 to 4 eighths</td><td>Partly cloudy, up to half the sky.</td></tr>
+<tr><td>BKN</td><td>5 to 7 eighths</td><td>Mostly cloudy, with only gaps of blue.</td></tr>
+<tr><td>OVC</td><td>8 eighths</td><td>The whole sky is covered.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="source">Source: METAR sky cover categories (oktas).</p>
+<p>In aviation, "few" or "scattered" clouds never count as a ceiling. Only a broken or overcast layer does, and the lowest one sets the ceiling.</p>
+
+<h2>Why a METAR changes</h2>
+<p>Each report is a fresh snapshot, so it changes whenever the weather at that station does. The routine report comes out about every hour. When something big changes in between, like a sudden drop in visibility, the station sends an extra report.</p>
+
+<h2>What a METAR means for you</h2>
+<h3>Everyday</h3>
+<p>A METAR is a nearby, frequently updated snapshot of exactly what is happening outside right now. In the example above, 36/06 means 36&deg;C (about 97&deg;F) with a 6&deg;C dew point: hot and dry.</p>
+<h3>Outdoors</h3>
+<p>The station may be several miles away and at a different elevation than your trailhead, so treat it as a nearby reference, not the exact conditions where you will be. Check the observation time: it is in UTC.</p>
+<h3>Flying</h3>
+<p>METAR wind directions are referenced to true north, while tower and ATIS winds are magnetic, so the numbers can differ. Check the age of the report before you launch; conditions can change well within an hour.</p>
+
+  <aside class="callout" aria-label="Did you know?">
+    <p class="callout-title">Did you know?</p>
+    <p>When weather changes significantly between routine hourly reports, stations send out an unscheduled special report called a SPECI.</p>
+    <p class="source">Source: FAA</p>
+  </aside>
+
+  <h2>Common questions</h2>
+<details><summary>What does Z mean in a METAR?</summary><p>Z stands for Zulu, which means UTC. In 091853Z, the report is from the 9th of the month at 18:53 UTC.</p></details>
+<details><summary>How often is a METAR issued?</summary><p>Roughly once an hour. When weather changes significantly between routine reports, the station sends an unscheduled special report called a SPECI.</p></details>
+<details><summary>What does M mean in front of a METAR temperature?</summary><p>M means minus. M05/M10 is a temperature of -5°C with a dew point of -10°C.</p></details>
+
+  <h2>Related</h2>
+  <ul class="related">
+    <li><a href="how-to-read-a-taf.html">How to read a TAF</a></li>
+    <li><a href="flight-categories-vfr-ifr.html">VFR, MVFR, IFR, LIFR: flight categories explained</a></li>
+    <li><a href="barometric-pressure.html">Barometric pressure: what rising and falling pressure mean</a></li>
+  </ul>
+
+  <div class="card cta-card">
+    <h3>See it live in Solrise</h3>
+    <p>Every reading in Solrise Weather comes with its scale, what it feels like, and what it means for your day. Coming soon to the App Store.</p>
+    <a class="btn" href="../">See Solrise Weather</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 CU Adventures LLC. Solrise Weather.</span>
+    <nav aria-label="Footer">
+      <a href="../">Home</a>
+      <a href="./">Learn</a>
+      <a href="../press.html">Press</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

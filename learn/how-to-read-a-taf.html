@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How to Read a TAF Aviation Forecast | Solrise Weather</title>
+<meta name="description" content="A TAF is an airport&#x27;s own short-range forecast in aviation code. Learn to read the valid period, wind, visibility, clouds, and FM, TEMPO, and PROB groups.">
+<link rel="canonical" href="https://proviewmedia.github.io/solrise-website/learn/how-to-read-a-taf.html">
+<meta name="theme-color" content="#0b1a4a">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/favicon-180.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Solrise Weather">
+<meta property="og:title" content="How to Read a TAF Aviation Forecast | Solrise Weather">
+<meta property="og:description" content="A TAF is an airport&#x27;s own short-range forecast in aviation code. Learn to read the valid period, wind, visibility, clouds, and FM, TEMPO, and PROB groups.">
+<meta property="og:url" content="https://proviewmedia.github.io/solrise-website/learn/how-to-read-a-taf.html">
+<meta property="og:image" content="https://proviewmedia.github.io/solrise-website/assets/screen-today.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to read a TAF",
+  "description": "A TAF is an airport's own short-range forecast in aviation code. Learn to read the valid period, wind, visibility, clouds, and FM, TEMPO, and PROB groups.",
+  "image": "https://proviewmedia.github.io/solrise-website/assets/screen-today.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "CU Adventures LLC"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CU Adventures LLC"
+  },
+  "datePublished": "2026-10-07",
+  "dateModified": "2026-10-07",
+  "mainEntityOfPage": "https://proviewmedia.github.io/solrise-website/learn/how-to-read-a-taf.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a METAR and a TAF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A METAR is an observation of what an airport station measured, refreshed roughly every hour. A TAF is a forecast for that airport, issued a few times a day, in the same code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does FM mean in a TAF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FM means from. FM100400 says conditions are expected to change starting day 10 at 04:00 UTC, and each FM group starts a new forecast period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What area does a TAF cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the US, a TAF covers only the area within 5 statute miles of the center of the airport's runway complex."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://proviewmedia.github.io/solrise-website/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Learn",
+      "item": "https://proviewmedia.github.io/solrise-website/learn/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to read a TAF",
+      "item": "https://proviewmedia.github.io/solrise-website/learn/how-to-read-a-taf.html"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../"><img src="../assets/sunrise.png" alt="" width="34" height="34">Solrise</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="../#features">Features</a>
+      <a href="./">Learn</a>
+      <a href="../#pricing">Pricing</a>
+      <a href="../support.html">Support</a>
+      <a href="../press.html">Press</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc article">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="../">Home</a></li>
+      <li><a href="./">Learn</a></li>
+      <li aria-current="page">How to read a TAF</li>
+    </ol>
+  </nav>
+  <h1>How to read a TAF</h1>
+  <p class="lede-sm"><strong>A TAF (Terminal Aerodrome Forecast) is a forecast for one airport, usually covering the next 24 hours, written in the same code as a METAR.</strong> It lists the issue time, the valid period, the expected wind, visibility, and clouds, then change groups like FM that start new forecast periods.</p>
+
+<h2>What a TAF is</h2>
+<p>Where a METAR tells you what an airport station measured, a TAF tells you what forecasters expect there. It is a short-range outlook for one station, issued a few times a day and updated as conditions change. Each new issuance replaces the last one, so what you see is always the latest outlook.</p>
+<p>Here is a sample TAF, decoded below:</p>
+<pre class="code">KVGT 091724Z 0918/1018 08007KT P6SM FEW150
+  FM100400 ...</pre>
+
+<h2>Decoding a TAF, piece by piece</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Code</th><th>What it means</th></tr></thead>
+<tbody>
+<tr><td><code>KVGT</code></td><td>Station identifier: the same ICAO code as the METAR.</td></tr>
+<tr><td><code>091724Z</code></td><td>When this forecast was issued: the 9th at 17:24 UTC.</td></tr>
+<tr><td><code>0918/1018</code></td><td>Valid period: from day 09 at 18:00 UTC to day 10 at 18:00 UTC.</td></tr>
+<tr><td><code>08007KT</code></td><td>Forecast wind: direction in degrees and speed in knots, same format as a METAR.</td></tr>
+<tr><td><code>P6SM</code></td><td>Visibility greater than 6 statute miles. The "P" means plus.</td></tr>
+<tr><td><code>FEW150</code></td><td>Forecast sky condition and cloud base, same coding as a METAR.</td></tr>
+<tr><td><code>FM100400</code></td><td>"From": conditions are expected to change starting day 10 at 04:00 UTC. Each FM group starts a new forecast period.</td></tr>
+<tr><td><code>TEMPO</code>, <code>PROB30</code></td><td>Groups that flag short bursts of rain, storms, or gusts during otherwise decent periods.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="source">Source: National Weather Service and FAA TAF format.</p>
+
+<h2>Why a TAF changes</h2>
+<p>Forecasters reissue the TAF on a schedule a few times a day, and amend it when the weather is not playing out as expected. That makes it a living forecast: check the issue time, and if it is several hours old, look again before you rely on it.</p>
+<p>Inside a single TAF, the FM groups show the forecast changing over time. Reading down the list is like scrolling through an hourly forecast, just written in shorthand.</p>
+
+<h2>What a TAF means for you</h2>
+<h3>Everyday</h3>
+<p>Think of it as a very precise, single-location version of a 7-day forecast, in aviation shorthand. It is useful if you are planning time outside later today or tomorrow morning and want more precision than the general hourly forecast gives.</p>
+<h3>Outdoors</h3>
+<p>Look for TEMPO and PROB30 groups: they flag short bursts of rain, storms, or gusts during otherwise decent periods, which helps you time a long hike or ride around them.</p>
+<h3>Flying</h3>
+<p>Plan for the worst conditions in any TEMPO or PROB group during your arrival window, not the main line. Drone pilots can use the FM groups to see when wind or low ceilings are expected to arrive.</p>
+
+  <aside class="callout" aria-label="Did you know?">
+    <p class="callout-title">Did you know?</p>
+    <p>In the US, a TAF only covers the area within 5 statute miles of the center of the airport&#x27;s runway complex.</p>
+    <p class="source">Source: National Weather Service</p>
+  </aside>
+
+  <h2>Common questions</h2>
+<details><summary>What is the difference between a METAR and a TAF?</summary><p>A METAR is an observation of what an airport station measured, refreshed roughly every hour. A TAF is a forecast for that airport, issued a few times a day, in the same code.</p></details>
+<details><summary>What does FM mean in a TAF?</summary><p>FM means from. FM100400 says conditions are expected to change starting day 10 at 04:00 UTC, and each FM group starts a new forecast period.</p></details>
+<details><summary>What area does a TAF cover?</summary><p>In the US, a TAF covers only the area within 5 statute miles of the center of the airport&#x27;s runway complex.</p></details>
+
+  <h2>Related</h2>
+  <ul class="related">
+    <li><a href="how-to-read-a-metar.html">How to read a METAR</a></li>
+    <li><a href="flight-categories-vfr-ifr.html">VFR, MVFR, IFR, LIFR: flight categories explained</a></li>
+    <li><a href="chance-of-rain.html">What does a 40% chance of rain mean?</a></li>
+  </ul>
+
+  <div class="card cta-card">
+    <h3>See it live in Solrise</h3>
+    <p>Every reading in Solrise Weather comes with its scale, what it feels like, and what it means for your day. Coming soon to the App Store.</p>
+    <a class="btn" href="../">See Solrise Weather</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 CU Adventures LLC. Solrise Weather.</span>
+    <nav aria-label="Footer">
+      <a href="../">Home</a>
+      <a href="./">Learn</a>
+      <a href="../press.html">Press</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
