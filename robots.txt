@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://proviewmedia.github.io/solrise-website/sitemap.xml
