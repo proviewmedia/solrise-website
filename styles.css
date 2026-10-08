@@ -192,3 +192,17 @@ h1, h2, h3, .brand, .price { font-family: var(--rounded); }
 .value-strip strong { display: block; font-family: var(--rounded); font-size: 22px; color: var(--accent); margin-bottom: 4px; }
 .value-strip span { color: rgba(255,255,255,0.82); font-size: 15px; }
 @media (max-width: 860px) { .value-strip { grid-template-columns: 1fr; } }
+
+/* Cookie notice */
+#consent-banner {
+  position: fixed; z-index: 50; left: 16px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  max-width: 640px; margin-inline: auto;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px;
+  background: rgba(10, 10, 10, 0.94); border: 1px solid var(--card-stroke); border-radius: 22px;
+  padding: 16px 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+}
+#consent-banner p { margin: 0; flex: 1 1 280px; font-size: 15px; color: rgba(255,255,255,0.86); }
+.consent-actions { display: flex; gap: 10px; }
+.consent-actions .btn { padding: 10px 18px; font-size: 15px; border: 0; cursor: pointer; font-family: inherit; }
+.consent-actions .btn.ghost { border: 1px solid var(--card-stroke); }

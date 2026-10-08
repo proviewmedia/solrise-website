@@ -43,6 +43,23 @@
   ]
 }
 </script>
+<!-- Google Analytics with consent mode: analytics cookies stay off until the visitor accepts. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var solriseConsent = null;
+  try { solriseConsent = localStorage.getItem('solrise-analytics-consent'); } catch (e) {}
+  gtag('consent', 'default', {
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    analytics_storage: solriseConsent === 'granted' ? 'granted' : 'denied'
+  });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-64J7EVMKSV"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-64J7EVMKSV');
+</script>
+<script src="assets/consent.js" defer></script>
 </head>
 <body>
 <header class="nav">
@@ -69,7 +86,7 @@
           <span class="btn" aria-disabled="true">Coming soon to the App Store</span>
           <a class="btn ghost" href="#pricing">See pricing</a>
         </div>
-        <p class="hero-note">No ads. No tracking. Free to download, with a free forecast.</p>
+        <p class="hero-note">No ads, and no tracking in the app. Free to download, with a free forecast.</p>
       </div>
       <div class="phone"><img src="assets/screen-today.jpg" alt="Solrise Weather Today screen showing Las Vegas at 91 degrees with an hourly forecast chart and 7-day forecast chart" width="620" height="1348" fetchpriority="high"></div>
     </div>

@@ -13,6 +13,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap">
 <link rel="stylesheet" href="styles.css">
+<!-- Google Analytics with consent mode: analytics cookies stay off until the visitor accepts. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var solriseConsent = null;
+  try { solriseConsent = localStorage.getItem('solrise-analytics-consent'); } catch (e) {}
+  gtag('consent', 'default', {
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    analytics_storage: solriseConsent === 'granted' ? 'granted' : 'denied'
+  });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-64J7EVMKSV"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-64J7EVMKSV');
+</script>
+<script src="assets/consent.js" defer></script>
 </head>
 <body>
 <header class="nav">
@@ -30,9 +47,9 @@
 
 <main class="wrap doc">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 6, 2026</p>
+  <p class="updated">Last updated: October 7, 2026</p>
 
-  <p>Solrise Weather ("Solrise", "we") is a weather app for iPhone made by CUAD Ventures LLC. This policy explains, in plain language, what data the app uses and why. The short version: we use your location only to show you weather, it stays on your iPhone, and we never sell it. There are no ads, no tracking, and no analytics in the app.</p>
+  <p>Solrise Weather ("Solrise", "we") is a weather app for iPhone made by CUAD Ventures LLC. This policy explains, in plain language, what data the app uses and why. The short version: we use your location only to show you weather, it stays on your iPhone, and we never sell it. There are no ads, no tracking, and no analytics in the app. This website (solriseweather.app) uses Google Analytics only if you allow it; see <a href="#website">This website</a> below.</p>
 
   <h2>What we collect</h2>
   <p><strong>Location.</strong> With your permission, Solrise reads your current location to show weather where you are. You can also add cities by searching instead of sharing your location. Your saved cities, including their coordinates, are stored only on your iPhone.</p>
@@ -67,6 +84,16 @@
 
   <h2>Your choices</h2>
   <p>You can turn location access off any time in iPhone Settings, then Solrise, then Location, and add cities by search instead. Deleting the app removes everything it stored on your iPhone.</p>
+
+  <h2 id="website">This website</h2>
+  <p>This policy's app sections cover the Solrise iPhone app. The website at solriseweather.app is separate and works like this:</p>
+  <ul>
+    <li><strong>Google Analytics, only with your permission.</strong> We use Google Analytics to see which pages people find useful. Its cookies are only set if you tap Accept on the cookie notice. If you decline, or haven't chosen yet, Google Analytics runs in a cookieless mode that sends basic, anonymous signals (such as a page view) without identifying you.</li>
+    <li><strong>What Google receives:</strong> pages viewed, approximate location (country or city level, from your IP address), device and browser type, and how you arrived (for example a search or a link). Google processes this under its own privacy policy at policies.google.com/privacy.</li>
+    <li><strong>No ads.</strong> We don't use advertising cookies or advertising features, and we don't sell website data.</li>
+    <li><strong>Change your mind any time</strong> with the Cookie settings link at the bottom of every page. Your choice is saved only in your browser.</li>
+    <li><strong>Hosting:</strong> the site is hosted on GitHub Pages, which may log basic request information like IP addresses for security.</li>
+  </ul>
 
   <h2>Children</h2>
   <p>Solrise is a general-audience weather app and doesn't knowingly collect personal information from anyone, including children under 13.</p>

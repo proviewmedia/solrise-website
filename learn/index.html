@@ -121,6 +121,23 @@
   }
 }
 </script>
+<!-- Google Analytics with consent mode: analytics cookies stay off until the visitor accepts. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var solriseConsent = null;
+  try { solriseConsent = localStorage.getItem('solrise-analytics-consent'); } catch (e) {}
+  gtag('consent', 'default', {
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    analytics_storage: solriseConsent === 'granted' ? 'granted' : 'denied'
+  });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-64J7EVMKSV"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-64J7EVMKSV');
+</script>
+<script src="../assets/consent.js" defer></script>
 </head>
 <body>
 <header class="nav">
