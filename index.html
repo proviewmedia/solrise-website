@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="apple-itunes-app" content="app-id=6820342378">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Solrise Weather: The Weather App That Explains Every Reading | Radar, Hurricanes, Aurora, Tides</title>
 <meta name="description" content="Solrise Weather for iPhone: 24-hour and 7-day forecasts, live radar for the US, Canada, and Europe, hurricane tracking, and plain-language explanations of nearly 50 readings, from UV and air quality to aurora, tides, waves, and METAR. No ads. $2.49 a month, $14.99 a year, or $34.99 once.">
@@ -33,6 +34,7 @@
   "applicationCategory": "WeatherApplication",
   "description": "A weather app for iPhone with 24-hour and 7-day forecasts, live rain radar for the US, Canada, and Europe, worldwide satellite clouds, hurricane tracking, and plain-language explanations of every reading, including UV index, air quality, wind, dew point, aurora, tides, waves, and aviation METAR and TAF.",
   "url": "https://solriseweather.app/",
+  "installUrl": "https://apps.apple.com/us/app/solrise-weather/id6820342378",
   "image": "https://solriseweather.app/assets/screen-today.jpg",
   "author": { "@type": "Organization", "name": "CV Management Solutions, LLC" },
   "offers": [
@@ -60,14 +62,17 @@
   gtag('config', 'G-64J7EVMKSV');
 </script>
 <script src="assets/consent.js" defer></script>
+<script src="assets/nav.js" defer></script>
 </head>
 <body>
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="./"><img src="assets/logo/mark-white.svg" alt="" width="46" height="25">Solrise</a>
-    <nav class="nav-links" aria-label="Main">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
       <a href="#features">Features</a>
-      <a href="#hurricanes">Hurricanes</a>
+      <a href="#trip">Trip forecast</a>
+      <a href="#storms">Storms</a>
       <a href="learn/">Learn</a>
       <a href="#pricing">Pricing</a>
       <a href="support.html">Support</a>
@@ -80,11 +85,12 @@
   <section class="hero">
     <div class="wrap">
       <div>
+        <a class="announce" href="#trip"><span class="announce-tag">Coming next</span>Trip forecast<span aria-hidden="true">&rarr;</span></a>
         <p class="eyebrow">Weather for iPhone</p>
         <h1>The weather app that explains every reading.</h1>
-        <p class="lede">A clean 24-hour and 7-day forecast, live radar, hurricane tracking, and nearly 50 readings to choose from, each with a plain-language guide: what it means, where today sits on its scale, and what it means for your day.</p>
+        <p class="lede">A clean forecast, live radar, and hurricane tracking, with a plain-language guide to every reading.</p>
         <div class="hero-actions">
-          <span class="btn" aria-disabled="true">Coming soon to the App Store</span>
+          <a class="btn" href="https://apps.apple.com/us/app/solrise-weather/id6820342378">Download free on the App Store</a>
           <a class="btn ghost" href="#pricing">See pricing</a>
         </div>
         <p class="hero-note">No ads, and no tracking in the app. Free to download, with a free forecast.</p>
@@ -93,229 +99,170 @@
     </div>
   </section>
 
+  <section id="trip">
+    <div class="wrap feature-row">
+      <div>
+        <p class="eyebrow">Next update &middot; Included with Premium</p>
+        <h2>Know the weather on every mile of your drive.</h2>
+        <p class="section-lede">Read for the time you reach each town, not just where you start.</p>
+        <ul class="checklist">
+          <li>Every stop, forecast for when you're there</li>
+          <li>The best time to leave, across up to 3 routes</li>
+          <li>Follow it from the road</li>
+        </ul>
+        <p class="note">Covers drives in the next 7 days. Weather can change quickly, so check again before you leave.</p>
+        <details class="more">
+          <summary>See details</summary>
+          <ul>
+            <li>Each stop shows the forecast for when you'll get there, in that place's local time.</li>
+            <li>Compares leaving now with the next 8 hours, and marks the departure that misses the worst of it.</li>
+            <li>Up to 3 routes from Apple Maps, side by side, with the calmest one marked.</li>
+            <li>Official weather alerts near your route, with when you'll be there.</li>
+            <li>Save a trip, and once you're driving it updates from where you are for the rest of the way.</li>
+            <li>A guide, not a guarantee: follow road closures and local warnings.</li>
+          </ul>
+        </details>
+      </div>
+      <div class="feature-media"><div class="phone"><img src="assets/screen-trip.jpg" alt="Solrise Trip forecast for Las Vegas to Denver: 10 hours 17 minutes, 748 miles via I-70 East, with a Winter Weather Advisory near Beaver and a Wind Advisory near Thompson" width="620" height="1348" loading="lazy"></div></div>
+    </div>
+  </section>
+
   <section id="features">
     <div class="wrap">
       <h2>Everything you check the weather for.</h2>
-      <p class="section-lede">A forecast you can read at a glance, built on Apple Weather and on official data from NOAA, the National Weather Service, NASA, USGS, Environment Canada, and EUMETNET.</p>
-      <div class="grid three">
-        <div class="card">
-          <div class="label">Forecast</div>
-          <h3>Hourly and 7-day charts</h3>
-          <p>The next 24 hours as a temperature line with rain chances, and the week as a high and low chart with each night's moon phase. Tap any day for its full details.</p>
-        </div>
-        <div class="card">
-          <div class="label">Rain</div>
-          <h3>Next-hour rain</h3>
-          <p>A minute-by-minute bar chart of the rain headed your way, so you know if it starts in 10 minutes or stops in 38.</p>
-        </div>
-        <div class="card">
-          <div class="label">Safety</div>
-          <h3>Severe weather alerts</h3>
-          <p>Official warnings with the full text and what to do, always free. When several are in effect, the most serious comes first and every one is a tap away.</p>
-        </div>
-        <div class="card">
-          <div class="label">Air</div>
-          <h3>Air quality and UV</h3>
-          <p>The WHO UV index anywhere, and the US EPA air quality index across the US, from NOAA, with what each level means for your health.</p>
-        </div>
-        <div class="card">
-          <div class="label">Heat and cold</div>
-          <h3>How it really feels</h3>
-          <p>Heat index and wind chill from the National Weather Service formulas, plus NWS HeatRisk, which flags dangerous heat across the US.</p>
-        </div>
-        <div class="card">
-          <div class="label">Your way</div>
-          <h3>Make Today yours</h3>
-          <p>Choose from nearly 50 cards. Press and hold any card to move it, add it, or remove it. The layout fills itself, so there are never empty gaps.</p>
-        </div>
-        <div class="card">
-          <div class="label">Places</div>
-          <h3>Here, Home, and everywhere else</h3>
-          <p>Your current location, your Home, and your saved cities. Swipe across Today to move between them. Search any city and see its full forecast before you decide to save it.</p>
-        </div>
-        <div class="card">
-          <div class="label">Widgets</div>
-          <h3>Widgets for any place</h3>
-          <p>Hours, days, or both on your Home Screen, plus widgets for next-hour rain, UV and air quality, sunrise and sunset, and the nearest hurricane. Set each one to where you are, your Home, or any saved city.</p>
-        </div>
-        <div class="card">
-          <div class="label">Local time</div>
-          <h3>Every city on its own clock</h3>
-          <p>Hours, sunrise, and tides show in each place's local time, wherever you are.</p>
-        </div>
+      <p class="section-lede">Built on Apple Weather and official data from NOAA, NASA, and the National Weather Service.</p>
+      <div class="tiles">
+        <div class="tile"><h3>Hourly and 7-day</h3><p>Clear charts for the next 24 hours and the week ahead.</p></div>
+        <div class="tile"><h3>Next-hour rain</h3><p>Minute by minute, so you know when it starts and stops.</p></div>
+        <div class="tile"><h3>Severe alerts</h3><p>Official warnings with what to do. Always free.</p></div>
+        <div class="tile"><h3>Air quality and UV</h3><p>What each level means for your health.</p></div>
+        <div class="tile"><h3>Make Today yours</h3><p>Nearly 50 cards. Press and hold to move, add, or remove.</p></div>
+        <div class="tile"><h3>Every place you care about</h3><p>Here, Home, and saved cities, each on its own clock, plus widgets for any of them.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="radar">
-    <div class="wrap feature-row">
+  <section id="storms">
+    <span id="hurricanes" class="anchor" aria-hidden="true"></span>
+    <span id="radar" class="anchor" aria-hidden="true"></span>
+    <div class="wrap feature-row flip">
       <div>
-        <h2>Live radar, satellite, and fronts.</h2>
-        <p class="eyebrow" style="margin-top:-6px;">Included with Premium</p>
-        <p class="section-lede">Watch the weather move, with maps straight from the agencies that run the radars and satellites. It starts playing the moment you open it, so you see the last few hours unfold.</p>
+        <p class="eyebrow">Included with Premium</p>
+        <h2>See storms coming.</h2>
+        <p class="section-lede">Live maps from the agencies that run the radars, satellites, and hurricane center.</p>
         <ul class="checklist">
-          <li><strong>Rain radar:</strong> live radar for the last 90 minutes across the US (NOAA), Canada (Environment Canada), and Europe (EUMETNET's network of about 150 radars in 30 countries)</li>
-          <li><strong>Satellite:</strong> clouds anywhere in the world over the last 3 hours, from NASA and NOAA satellites</li>
-          <li><strong>Fronts:</strong> NOAA's national forecast chart, with cold and warm fronts, highs and lows, and where rain and snow are expected over the next three days</li>
-          <li><strong>Hurricanes:</strong> every active tropical storm drawn right on the map</li>
-          <li>Color legends for every map, in your units</li>
+          <li>Live radar for the US, Canada, and Europe</li>
+          <li>Satellite clouds worldwide, plus fronts</li>
+          <li>Every hurricane with its cone, track, and warnings</li>
         </ul>
+        <p class="note">A Hurricanes card shows up free when a storm is within about 1,200 miles of your city.</p>
+        <details class="more">
+          <summary>See details</summary>
+          <ul>
+            <li>Rain radar for the last 90 minutes across the US (NOAA), Canada (Environment Canada), and Europe (EUMETNET's network of about 150 radars in 30 countries). It starts playing the moment you open it.</li>
+            <li>Satellite clouds anywhere in the world over the last 3 hours, from NASA and NOAA.</li>
+            <li>Fronts: NOAA's national forecast chart, with cold and warm fronts, highs and lows, and where rain and snow are expected over the next three days.</li>
+            <li>Every hurricane and tropical storm in the Atlantic, Gulf of Mexico, Caribbean, and Eastern and Central Pacific, with the 5-day cone, track, and expected positions.</li>
+            <li>Coastal watches and warnings in their official colors, plus top winds, gusts, pressure, heading, and distance from you.</li>
+            <li>Where each storm sits on the Saffir-Simpson scale, what the cone means and doesn't, and the official advisory a tap away. Updates as each new advisory comes out.</li>
+            <li>Color legends for every map, in your units.</li>
+          </ul>
+        </details>
       </div>
       <div class="feature-media"><div class="phone"><img src="assets/screen-storms.jpg" alt="Solrise radar map showing Hurricane Simon off Mexico with its forecast cone, track, forecast positions, and coastal watches, with chips for Tropical Storm Trudy and Hurricane Simon" width="620" height="1348" loading="lazy"></div></div>
     </div>
   </section>
 
-  <section id="hurricanes">
-    <div class="wrap feature-row flip">
-      <div>
-        <h2>Track hurricanes as they happen.</h2>
-        <p class="eyebrow" style="margin-top:-6px;">Included with Premium</p>
-        <p class="section-lede">Every active hurricane and tropical storm in the Atlantic, Gulf of Mexico, Caribbean, and Eastern and Central Pacific appears on the map with its name and strength. Tap one for the latest from the National Hurricane Center.</p>
-        <ul class="checklist">
-          <li>The forecast cone, track, and expected positions for the next 5 days</li>
-          <li>Coastal hurricane and tropical storm watches and warnings, in their official colors</li>
-          <li>Top winds, gusts, pressure, which way it's heading, and how far it is from you</li>
-          <li>Where it sits on the Saffir-Simpson hurricane wind scale</li>
-          <li>What the cone means, and what it doesn't, with the official advisory one tap away</li>
-          <li>Updates on its own as each new advisory comes out</li>
-        </ul>
-        <p class="hero-note">When a storm is within about 1,200 miles of your city, a Hurricanes card on Today shows it, free.</p>
-      </div>
-      <div class="feature-media"><div class="phone"><img src="assets/screen-storm-detail.jpg" alt="Solrise storm page for Hurricane Simon: Category 1, 90 mph top winds, 115 mph gusts, moving west at 2 mph, with the Saffir-Simpson hurricane wind scale and its forecast path" width="620" height="1348" loading="lazy"></div></div>
-    </div>
-  </section>
-
   <section id="learn">
-    <div class="wrap feature-row flip">
+    <div class="wrap feature-row">
       <div>
+        <p class="eyebrow">In every reading</p>
         <h2>Learn what every number means.</h2>
-        <p class="section-lede">Tap any reading to open a guide built for curious people. No meteorology degree needed.</p>
+        <p class="section-lede">Tap any reading for a plain-language guide. No meteorology degree needed.</p>
         <ul class="checklist">
-          <li><strong>Where today sits:</strong> the real published scale, like the Beaufort wind scale or the WHO UV index, with a marker for right now</li>
-          <li><strong>What it feels like:</strong> "Small trees sway" beats "19 mph"</li>
-          <li><strong>What it means for you:</strong> advice for everyday life, running and hiking, or flying and drones</li>
-          <li><strong>Did you know:</strong> one surprising, sourced fact for every reading</li>
-          <li><strong>Where the data comes from:</strong> named on every page</li>
+          <li>Where today sits on the real scale</li>
+          <li>What it feels like, in plain words</li>
+          <li>What it means for your day</li>
         </ul>
+        <div class="guide-links">
+          <p class="guide-links-title">Free guides to read now</p>
+          <a href="learn/dew-point.html">What is dew point?</a>
+          <a href="learn/uv-index.html">UV index explained</a>
+          <a href="learn/chance-of-rain.html">What a 40% chance of rain means</a>
+          <a href="learn/kp-index-aurora.html">Kp index and the aurora</a>
+          <a class="all" href="learn/">See all 10 guides</a>
+        </div>
       </div>
       <div class="feature-media"><div class="phone"><img src="assets/screen-wind.jpg" alt="Solrise wind guide showing 3 mph, Light air on the Beaufort wind scale, and advice lenses for everyday, outdoors, and flying" width="620" height="1348" loading="lazy"></div></div>
     </div>
   </section>
 
-  <section id="sky">
-    <div class="wrap feature-row">
-      <div>
-        <h2>Aurora, tides, and the sky above.</h2>
-        <p class="section-lede">The specialist data other apps leave out, explained just as clearly.</p>
-        <ul class="checklist">
-          <li><strong>Aurora and space weather:</strong> the NOAA Kp index and how far south the northern lights may reach, plus solar wind and solar flares</li>
-          <li><strong>Tides and coast:</strong> next high and low tide, where the water is now, and coastal wind, pressure, and air temperature</li>
-          <li><strong>Aviation:</strong> flight category, METAR and TAF decoded, and live readings from the nearest airport</li>
-          <li><strong>Severe storm outlook</strong> for today and tomorrow, plus thunder chance</li>
-          <li><strong>Sun and moon:</strong> golden hour, daylight, phases, and moonrise</li>
-        </ul>
-      </div>
-      <div class="feature-media"><div class="phone"><img src="assets/screen-aurora.jpg" alt="Solrise aurora forecast showing Kp 2.3 on the NOAA geomagnetic storm scale" width="620" height="1348" loading="lazy"></div></div>
-    </div>
-  </section>
-
   <section id="more">
+    <span id="sky" class="anchor" aria-hidden="true"></span>
     <div class="wrap">
+      <p class="eyebrow">Included with Premium</p>
       <h2>Go deeper than the forecast.</h2>
-      <p class="section-lede">Official data from the agencies forecasters rely on, each card with its own plain-language guide. Most of it comes from US government sources, so it covers the US.</p>
-      <div class="grid three">
-        <div class="card">
-          <div class="label">Ocean</div>
-          <h3>Waves, swell, and water</h3>
-          <p>Wave height, swell, and water temperature from the nearest NOAA buoy, plus tidal currents.</p>
-        </div>
-        <div class="card">
-          <div class="label">Rivers</div>
-          <h3>River levels and flood stages</h3>
-          <p>The nearest river gauge, where the water is now, where it's forecast to go, and how close it is to flooding.</p>
-        </div>
-        <div class="card">
-          <div class="label">Earthquakes</div>
-          <h3>Recent earthquakes</h3>
-          <p>Magnitude 2.5 and up within about 155 miles over the past week, from the US Geological Survey, anywhere in the world.</p>
-        </div>
-        <div class="card">
-          <div class="label">From the forecasters</div>
-          <h3>Forecaster's notes</h3>
-          <p>Your local National Weather Service office's own explanation of what they expect and why, section by section.</p>
-        </div>
-        <div class="card">
-          <div class="label">Outlooks</div>
-          <h3>Weeks ahead and risky days</h3>
-          <p>NOAA's 6 to 10 and 8 to 14 day outlooks, flood rain risk for the next three days, and winter storm impact.</p>
-        </div>
-        <div class="card">
-          <div class="label">Snow and sun</div>
-          <h3>Snow and sunshine</h3>
-          <p>Snow level, snow on the ground, and how many hours of sunshine to expect today.</p>
-        </div>
+      <p class="section-lede">The specialist data other apps leave out, each with its own guide. Much of it comes from US agencies, so it covers the US.</p>
+      <div class="tiles four">
+        <div class="tile"><h3>Aurora</h3><p>The Kp index and how far south the lights may reach.</p></div>
+        <div class="tile"><h3>Tides</h3><p>Next high and low, and where the water is now.</p></div>
+        <div class="tile"><h3>Ocean</h3><p>Waves, swell, and water temperature from NOAA buoys.</p></div>
+        <div class="tile"><h3>Rivers</h3><p>River levels and how close they are to flooding.</p></div>
+        <div class="tile"><h3>Earthquakes</h3><p>Recent quakes nearby, from the USGS.</p></div>
+        <div class="tile"><h3>Aviation</h3><p>Flight category, METAR, and TAF, decoded.</p></div>
+        <div class="tile"><h3>Outlooks</h3><p>Severe storm risk, and the weeks ahead from NOAA.</p></div>
+        <div class="tile"><h3>Forecaster's notes</h3><p>Your local NWS office explains what they expect.</p></div>
       </div>
     </div>
   </section>
 
   <section id="pricing">
     <div class="wrap">
-      <h2>More insight. Better value.</h2>
-      <p class="section-lede">Start free. Upgrade once, and get every insight Solrise has. No tiers, no add-ons, no ads. Subscribe monthly or yearly, or own it for life and never pay again.</p>
-      <div class="value-strip">
-        <div><strong>$34.99 for life</strong><span>Pay once and keep Premium for good. The other apps we compared charge $59.99 to $99.99 for lifetime.</span></div>
-        <div><strong>$14.99 a year</strong><span>About $1.25 a month, with a 7-day free trial.</span></div>
-        <div><strong>One plan, everything</strong><span>No Ultra tier or add-ons. Radar, hurricane tracking, aurora, tides, ocean, aviation, and every guide included.</span></div>
-      </div>
-      <div class="grid four">
-        <div class="card price-card">
+      <h2>Start free. Go Premium when you want more.</h2>
+      <p class="section-lede">One plan with everything. No tiers, no add-ons, no ads.</p>
+      <div class="plans">
+        <div class="card plan">
           <h3>Free</h3>
           <div class="price">$0</div>
           <ul class="checklist">
-            <li>Current conditions, hourly and 7-day forecasts</li>
-            <li>Next-hour rain</li>
+            <li>Forecasts and next-hour rain</li>
             <li>Severe weather alerts</li>
-            <li>UV, wind, humidity, air quality, and more</li>
-            <li>Heat index, wind chill, and HeatRisk</li>
-            <li>A Hurricanes card when a storm is near</li>
-            <li>What every reading means, its scale, and a fact</li>
+            <li>Every reading explained</li>
             <li>Your location plus 2 cities</li>
             <li>Small Home Screen widget</li>
           </ul>
         </div>
-        <div class="card price-card">
-          <h3>Premium monthly</h3>
-          <div class="price">$2.49 <small>/ month</small></div>
-          <p>Everything in Premium. Cancel anytime.</p>
-        </div>
-        <div class="card price-card featured">
-          <span class="pill" style="background: var(--accent);">Most popular</span>
-          <h3 style="margin-top:12px;">Premium yearly</h3>
-          <div class="price">$14.99 <small>/ year</small></div>
-          <p>7 days free, then about $1.25 a month. Save 50% vs monthly.</p>
+        <div class="card plan featured">
+          <h3>Premium</h3>
+          <div class="billing" role="list">
+            <div class="bill best" role="listitem">
+              <div><strong>Yearly</strong><span class="pill">Most popular</span><small>7 days free. Save $14.89 a year vs monthly.</small></div>
+              <div class="amount">$14.99<small>/ year</small></div>
+            </div>
+            <div class="bill" role="listitem">
+              <div><strong>Monthly</strong><small>Cancel anytime.</small></div>
+              <div class="amount">$2.49<small>/ month</small></div>
+            </div>
+            <div class="bill" role="listitem">
+              <div><strong>Lifetime</strong><small>Pay once. No subscription.</small></div>
+              <div class="amount">$34.99<small>once</small></div>
+            </div>
+          </div>
+          <p class="plan-includes">Everything in Free, plus:</p>
           <ul class="checklist">
-            <li>Everything in Free</li>
-            <li>Live radar, worldwide satellite, and fronts</li>
-            <li>Hurricane tracking with cones, tracks, and warnings</li>
-            <li>Full guides: 24-hour charts, what's next, everyday, outdoors, and flying advice</li>
-            <li>Aurora, space weather, tides, ocean, aviation, and storm outlooks</li>
-            <li>River levels, earthquakes, forecaster's notes, and long-range outlooks</li>
-            <li>Every widget: hours and days, Lock Screen, rain, UV and air, sun, and hurricanes</li>
-            <li>Unlimited cities</li>
+            <li>Live radar, satellite, and fronts</li>
+            <li>Hurricane tracking</li>
+            <li>Trip forecast, coming in the next update</li>
+            <li>Full guides with everyday, outdoors, and flying advice</li>
+            <li>Aurora, tides, ocean, aviation, and more</li>
+            <li>Every widget and unlimited cities</li>
           </ul>
-        </div>
-        <div class="card price-card">
-          <h3>Premium lifetime</h3>
-          <div class="price">$34.99 <small>once</small></div>
-          <p>Everything in Premium. Pay once, keep it for good. No subscription.</p>
         </div>
       </div>
 
-      <p class="fine-print" style="margin-top:14px;font-size:0.85rem;opacity:0.7;">Subscriptions renew automatically until cancelled in your Apple ID settings. Cancel at least 24 hours before a renewal or the end of the trial to avoid being charged. Have a promo code? Redeem it in the app under Settings. See our <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a>.</p>
-
-      <div class="card" style="margin-top:16px;">
-        <h3>How we compare</h3>
-        <p style="margin-bottom:14px;">US App Store prices, checked October 2026. Each app offers different features, so compare what matters to you.</p>
+      <details class="more compare">
+        <summary>How we compare</summary>
+        <p>US App Store prices, checked October 2026. Each app offers different features, so compare what matters to you.</p>
         <div class="table-wrap">
           <table>
             <thead><tr><th>App</th><th>Monthly</th><th>Yearly</th><th>Lifetime</th></tr></thead>
@@ -326,38 +273,17 @@
             </tbody>
           </table>
         </div>
-      </div>
+      </details>
 
-      <div class="grid two" style="margin-top:16px;">
-        <div class="card">
-          <h3>What you get</h3>
-          <p>Forecasts, live radar, hurricane tracking, alerts, air quality, UV, aurora, tides, ocean conditions, aviation reports, and a plain-language guide to every reading. Data from Apple Weather, NOAA, the National Weather Service, NASA, USGS, Environment Canada, and EUMETNET, named in the app.</p>
-        </div>
-        <div class="card">
-          <h3>Not yet, honestly</h3>
-          <p>An Apple Watch app and rain notifications aren't built yet. When they arrive, they're included in Premium at no extra cost.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="guides">
-    <div class="wrap">
-      <h2>Weather, explained.</h2>
-      <p class="section-lede">Free guides to the numbers on your forecast, from the same plain-language library inside the app.</p>
-      <div class="grid two">
-        <a class="card link-card" href="learn/dew-point.html"><h3>What is dew point?</h3><p>Why dew point, not humidity, tells you how muggy it will really feel.</p></a>
-        <a class="card link-card" href="learn/uv-index.html"><h3>UV index explained</h3><p>The WHO UV index from Low to Extreme, and when you actually need sunscreen.</p></a>
-        <a class="card link-card" href="learn/chance-of-rain.html"><h3>What does a 40% chance of rain mean?</h3><p>What the percentage really measures, and what it doesn't.</p></a>
-        <a class="card link-card" href="learn/kp-index-aurora.html"><h3>Kp index and the aurora</h3><p>What Kp 5, 7, and 9 mean, and how far south the northern lights can reach.</p></a>
-      </div>
-      <p style="margin-top:20px;"><a href="learn/">See all 10 guides</a></p>
+      <p class="fine-print">Not built yet: an Apple Watch app and rain notifications. When they arrive, they're included in Premium at no extra cost.</p>
+      <p class="fine-print">Subscriptions renew automatically until cancelled in your Apple ID settings. Cancel at least 24 hours before a renewal or the end of the trial to avoid being charged. Have a promo code? Redeem it in the app under Settings. See our <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a>.</p>
     </div>
   </section>
 
   <section id="faq">
     <div class="wrap">
       <h2>Questions</h2>
+      <details><summary>When is Trip forecast coming, and how far ahead does it work?</summary><p>Trip forecast is coming in the next update and is included with Premium. It works for drives in the next 7 days, as far ahead as hourly forecasts reach. Weather can change quickly, especially days out, so treat it as a guide, check again before you leave, and follow road closures and local warnings.</p></details>
       <details><summary>Is Solrise free?</summary><p>Yes. The forecast, alerts, the small widget, and every core reading are free, with no ads. Premium adds live radar and maps, hurricane tracking, full guides, aurora, tides, ocean conditions, aviation, and unlimited cities.</p></details>
       <details><summary>Where does the weather data come from?</summary><p>Forecasts, current conditions, and alerts come from Apple Weather. US radar, air quality, hurricanes, tides, ocean conditions, aviation reports, aurora, and outlooks come from NOAA and the National Weather Service, Canadian radar from Environment and Climate Change Canada, European radar from EUMETNET OPERA, satellite imagery from NASA and NOAA, and earthquakes from the US Geological Survey. Every page in the app names its source.</p></details>
       <details><summary>Does Solrise work outside the US?</summary><p>Yes. The forecast, current conditions, UV, and every core reading come from Apple Weather and work worldwide, and so do satellite clouds, aurora, and earthquakes. Rain radar covers the US, Canada, and most of Europe. Many of the specialist readings come from US government agencies, so they cover the US. Cards without data for your area stay out of your way, and the radar says when a map doesn't cover it.</p></details>
